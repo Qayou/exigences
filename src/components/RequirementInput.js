@@ -30,7 +30,7 @@ const RequirementInput = ({ dispatch }) => {
         <Form onSubmit={e => { handleFormOnSubmit(dispatch, e)}} inline>
             <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                 <Label for="requirementDescription" className="mr-sm-2">Description</Label>
-                <input type="string" name="description" id="requirementDescription" ref={ node => descriptionInput = node } />
+                <Input type="string" name="description" id="requirementDescription" innerRef={ node => descriptionInput = node } />
             </FormGroup>
             <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                 <Label for="severitySelect">Severity</Label>
