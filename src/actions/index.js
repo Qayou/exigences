@@ -1,4 +1,4 @@
-let nextRequirementId = 0;
+let nextRequirementId = 0
 
 export const SeverityLevels = {
     'COULD': 'could',
@@ -13,4 +13,9 @@ export const addRequirement = ({ description, severityLevel }) => ({
     id: nextRequirementId++,
     description: description,
     severityLevel: severityLevel
+})
+
+export const removeRequirement = ({ requirementId }) => ({
+    type: 'REMOVE_REQUIREMENT',
+    requirementId
 })

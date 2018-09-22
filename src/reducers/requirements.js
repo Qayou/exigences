@@ -7,6 +7,8 @@ const requirements = (state = [], action) => {
                     ...action
                 }
             ]
+        case 'REMOVE_REQUIREMENT':
+            return state.filter(requirement => requirement.id !== action.requirementId)
         default:
             return state
     }
