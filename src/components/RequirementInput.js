@@ -1,9 +1,8 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import { connect } from 'react-redux'
-import PropTypes from 'prop-types'
-
+import { Button, Col, Form, FormGroup, Input, Label } from 'reactstrap'
 import { addRequirement, SeverityLevels } from '../actions'
-import { Button, Input, Form, FormGroup, Label, Col } from 'reactstrap'
 
 let severityLevel = 'COULD'
 let descriptionInput
@@ -52,4 +51,4 @@ RequirementInput.propTypes = {
     dispatch: PropTypes.func.isRequired
 }
 
-export default connect()(RequirementInput);
+export default connect()(RequirementInput)

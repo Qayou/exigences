@@ -1,8 +1,7 @@
 import React from 'react'
-import { Button } from 'reactstrap'
-
-import { SeverityLevels } from '../actions'
 import { connect } from 'react-redux'
+import { Button } from 'reactstrap'
+import { SeverityLevels } from '../actions'
 
 const mapStateToProps = state => ({
     requirements: state.requirements

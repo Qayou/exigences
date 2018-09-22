@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import RequirementList from './RequirementList'
-import RequirementInput from './RequirementInput'
 import { Container } from 'reactstrap'
+import RequirementInput from './RequirementInput'
+import RequirementList from './RequirementList'
 import RequirementsDownloader from './RequirementsDownloader'
 
 class App extends Component {

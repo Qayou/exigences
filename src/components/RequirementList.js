@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import { ListGroup } from 'reactstrap'
-
 import Requirement from './Requirement'
 
 const mapStateToProps = state => ({
